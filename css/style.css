@@ -1,0 +1,77 @@
+/* Általános stílusok */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(190, 231, 255);/* Általános stílusok */
+
+
+
+    /* Fő cím stílus (h1) */
+h1 {
+    font-size: 40px; /* Fő cím nagyobb mérete */
+    
+}
+
+
+
+/* Tartalom konténer */
+.container {
+    display: flex;
+    justify-content: center; /* Középre helyezi a fő tartalmat */
+
+}
+
+/* Oldalsáv stílus */
+.sidebar {
+    width: 250px; /* Oldalsáv szélessége */
+    background-color: rgb(141, 213, 255); /* Oldalsáv háttérszíne */
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* Hozzáadjuk a pozicionálást */
+}
+
+/* Fő tartalom stílus */
+.main-content {
+    flex-grow: 1; /* A fő tartalom kitölti a maradék helyet */
+    max-width: 800px; /* Maximális szélesség a fő tartalomhoz */
+    padding: 20px;
+    background-color: rgb(190, 231, 255); /* Fő tartalom háttérszíne */
+
+    margin-left: 20px; /* Különbség az oldalsáv és a fő tartalom között */
+    
+}
+
+
+/* Szekciók stílusai */
+section {
+    margin-bottom: 20px; /* Szekciók közötti távolság */
+}
+
+#random-user {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgb(230, 246, 255);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-info img {
+    border: 5px solid rgb(223, 193, 137); /* Zöld színű keret */
+    object-fit: cover; /* A kép megfelelően illeszkedjen a keretbe */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+}
+
