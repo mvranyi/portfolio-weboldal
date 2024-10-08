@@ -40,6 +40,16 @@ img {
     width: 100%; 
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Teljes szélesség mobilon */
+        padding: 10px; /* Csökkentett padding */
+    }
+
+    .sidebar ul li {
+        margin: 10px 0; /* Csökkentett távolság menüelemek között */
+    }
+}
 .main-content {
     width: 100%; 
 }
@@ -55,13 +65,37 @@ img {
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
     position: relative; 
+    border: 3px solid #223030; /* Keret a menühöz */
+    border-radius: 8px; /* Lekerekített sarkok */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Kivéve a lista jelöléseket */
+    padding: 0; /* Felső és alsó margó eltávolítása */
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Különbség a menüelemek között */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    color: #223030; /* Szöveg színe */
+    padding: 10px 15px; /* Belső margó */
+    border-radius: 5px; /* Kerekített sarkok a hivatkozásoknál */
+    transition: background-color 0.3s; /* Áttűnés a háttérszín változására */
+}
+
+.sidebar ul li a:hover {
+    background-color: #959D90; /* Háttérszín változtatás, ha az egér a hivatkozás fölé megy */
+    color: white; /* Szöveg színének megváltoztatása */
 }
 
 .sidebar-images {
     display: flex;
     flex-direction: column; 
     align-items: center;    
-    gap: 105px;              
+    gap: 100px;              
 }
 .sidebar-images img {
     width: 200px;
@@ -112,6 +146,10 @@ img {
 
 section {
     margin-bottom: 20px; 
+    margin-bottom: 20px; /* Szekciók közötti távolság */
+    padding: 20px; /* Belső margó */
+    border: 2px solid #223030; /* Keret a szekciókhoz */
+    border-radius: 8px; /* Lekerekített sarkok */
 }
 
 #random-user {
