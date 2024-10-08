@@ -1,18 +1,43 @@
 /* Általános stílusok */
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    font-family:  'Verdana', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: rgb(190, 231, 255);/* Általános stílusok */
+    background-color: #e6c15c;/* Általános stílusok */
 
 
 
     /* Fő cím stílus (h1) */
 h1 {
-    font-size: 40px; /* Fő cím nagyobb mérete */
-    
+    font-size: 45px; /* Fő cím nagyobb mérete */
+    font-weight: bold;
+    text-align: center;
+    color: #e6c15c;
+    border: 3px solid #5a3d2b;
+    border-radius: 8px;
+    padding: 10px;
+    -webkit-text-stroke: 2px #5a3d2b ;
 }
+
+   /* Fő cím stílus (h1) */
+h2  {
+    font-size: 25px; /* Fő cím nagyobb mérete */
+    font-weight: bolder;
+    text-align: left;
+    color: #e6c15c;
+
+    -webkit-text-stroke: 1px #5a3d2b ;
+}
+
+h3  {
+    font-size: 25px; /* Fő cím nagyobb mérete */
+    font-weight: bolder;
+    text-align: center;
+    color: #e5771e;
+    -webkit-text-stroke: 1px #5a3d2b ;
+}
+
 
 
 
@@ -26,7 +51,7 @@ h1 {
 /* Oldalsáv stílus */
 .sidebar {
     width: 250px; /* Oldalsáv szélessége */
-    background-color: rgb(141, 213, 255); /* Oldalsáv háttérszíne */
+    background-color: #e5771e; /* Oldalsáv háttérszíne */
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
     position: relative; /* Hozzáadjuk a pozicionálást */
@@ -37,11 +62,41 @@ h1 {
     flex-grow: 1; /* A fő tartalom kitölti a maradék helyet */
     max-width: 800px; /* Maximális szélesség a fő tartalomhoz */
     padding: 20px;
-    background-color: rgb(190, 231, 255); /* Fő tartalom háttérszíne */
+    background-color: #f4a127; /* Fő tartalom háttérszíne */
 
     margin-left: 20px; /* Különbség az oldalsáv és a fő tartalom között */
     
 }
+
+/* Projektek galéria */
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #fff3e0;
+    padding: 10px;
+    border: 2px solid #5a3d2b;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #5a3d2b;
+}
+
 
 
 /* Szekciók stílusai */
@@ -52,8 +107,9 @@ section {
 #random-user {
     margin: 20px 0;
     padding: 20px;
-    background-color: rgb(230, 246, 255);
+    background-color: #e6c15c;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid #5a3d2b;
     border-radius: 8px;
     text-align: center;
 }
@@ -65,7 +121,7 @@ section {
 }
 
 #user-info img {
-    border: 5px solid rgb(223, 193, 137); /* Zöld színű keret */
+    border: 5px solid #5a3d2b; /* Zöld színű keret */
     object-fit: cover; /* A kép megfelelően illeszkedjen a keretbe */
     border-radius: 50%;
     width: 150px;
