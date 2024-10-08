@@ -57,6 +57,26 @@ h3  {
     position: relative; /* Hozzáadjuk a pozicionálást */
 }
 
+/* Képek stílusa az oldalsávban */
+.sidebar-images {
+    display: flex;
+    flex-direction: column; /* Képek egymás alatt */
+    align-items: center;    /* Középre igazítás */
+    gap: 105px;              /* Képek közötti távolság */
+}
+.sidebar-images img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    
+    
+}
+
+.sidebar-images img:first-child {
+    margin-top: 80px; /* Növeld ezt az értéket a kívánt távolság alapján */
+}
+
+
 /* Fő tartalom stílus */
 .main-content {
     flex-grow: 1; /* A fő tartalom kitölti a maradék helyet */
@@ -77,9 +97,9 @@ h3  {
 }
 
 .project {
-    background-color: #fff3e0;
+    background-color: #ffe6bd;
     padding: 10px;
-    border: 2px solid #5a3d2b;
+    border: 3px solid #5a3d2b;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -93,8 +113,10 @@ h3  {
 
 .project p {
     margin-top: 10px;
-    font-size: 18px;
-    color: #5a3d2b;
+    font-size: 30px;
+    color: #e6c15c;
+    -webkit-text-stroke: 1px #5a3d2b 
+
 }
 
 
@@ -107,7 +129,7 @@ section {
 #random-user {
     margin: 20px 0;
     padding: 20px;
-    background-color: #e6c15c;
+    background-color: #ffe6bd;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
     border: 3px solid #5a3d2b;
     border-radius: 8px;
