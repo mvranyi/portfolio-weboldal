@@ -42,12 +42,12 @@ img {
 
 @media (max-width: 768px) {
     .sidebar {
-        width: 100%; /* Teljes szélesség mobilon */
-        padding: 10px; /* Csökkentett padding */
+        width: 100%; 
+        padding: 10px; 
     }
 
     .sidebar ul li {
-        margin: 10px 0; /* Csökkentett távolság menüelemek között */
+        margin: 10px 0; 
     }
 }
 .main-content {
@@ -65,30 +65,30 @@ img {
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
     position: relative; 
-    border: 3px solid #223030; /* Keret a menühöz */
-    border-radius: 8px; /* Lekerekített sarkok */
+    border: 3px solid #223030; 
+    border-radius: 8px; 
 }
 
 .sidebar ul {
-    list-style-type: none; /* Kivéve a lista jelöléseket */
-    padding: 0; /* Felső és alsó margó eltávolítása */
+    list-style-type: none; 
+    padding: 0; 
 }
 
 .sidebar ul li {
-    margin: 15px 0; /* Különbség a menüelemek között */
+    margin: 15px 0; 
 }
 
 .sidebar ul li a {
-    text-decoration: none; /* Aláhúzás eltávolítása */
-    color: #223030; /* Szöveg színe */
-    padding: 10px 15px; /* Belső margó */
-    border-radius: 5px; /* Kerekített sarkok a hivatkozásoknál */
-    transition: background-color 0.3s; /* Áttűnés a háttérszín változására */
+    text-decoration: none; 
+    color: #223030; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 
 .sidebar ul li a:hover {
-    background-color: #959D90; /* Háttérszín változtatás, ha az egér a hivatkozás fölé megy */
-    color: white; /* Szöveg színének megváltoztatása */
+    background-color: #959D90; 
+    color: white; 
 }
 
 .sidebar-images {
@@ -146,10 +146,10 @@ img {
 
 section {
     margin-bottom: 20px; 
-    margin-bottom: 20px; /* Szekciók közötti távolság */
-    padding: 20px; /* Belső margó */
-    border: 2px solid #223030; /* Keret a szekciókhoz */
-    border-radius: 8px; /* Lekerekített sarkok */
+    margin-bottom: 20px; 
+    padding: 20px; 
+    border: 2px solid #223030; 
+    border-radius: 8px; 
 }
 
 #random-user {
