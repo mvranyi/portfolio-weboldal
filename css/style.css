@@ -1,109 +1,87 @@
-/* Általános stílusok */
+
 body {
     font-family:  'Verdana', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: #efefe9;/* Általános stílusok */
+    background-color: #efefe9;
+}
 
-
-
-    /* Fő cím stílus (h1) */
 h1 {
     
-    font-size: 50px; /* Fő cím nagyobb mérete */
+    font-size: 50px; 
     font-weight: bold;
     text-align: center;
     color: #223030;
     border: 3px solid #223030;
     border-radius: 8px;
-    padding: 10px;
-    
+    padding: 10px;  
 }
 
-   /* Fő cím stílus (h1) */
 h2  {
-    font-size: 25px; /* Fő cím nagyobb mérete */
+    font-size: 25px; 
     font-weight: bolder;
     text-align: left;
-    color: #223030;
-
-    
+    color: #223030;  
 }
 
 h3  {
-    font-size: 25px; /* Fő cím nagyobb mérete */
+    font-size: 25px; 
     font-weight: bolder;
     text-align: center;
-    color: #223030;
-    
+    color: #223030;  
 }
 
-
 img {
-    max-width: 100%; /* A képek ne legyenek szélesebbek a konténerüknél */
-    height: auto; /* A képarány megőrzése */
+    max-width: 100%; 
 }
 
 .sidebar {
-    width: 100%; /* Oldalsáv mobilon teljes szélességű */
+    width: 100%; 
 }
 
 .main-content {
-    width: 100%; /* Fő tartalom is teljes szélességű */
+    width: 100%; 
 }
 
-
-
-
-/* Tartalom konténer */
 .container {
     display: flex;
-    justify-content: center; /* Középre helyezi a fő tartalmat */
-
+    justify-content: center; 
 }
 
-/* Oldalsáv stílus */
 .sidebar {
-    width: 250px; /* Oldalsáv szélessége */
-    background-color: #bba58f; /* Oldalsáv háttérszíne */
+    width: 250px; 
+    background-color: #bba58f; 
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
-    position: relative; /* Hozzáadjuk a pozicionálást */
+    position: relative; 
 }
 
-/* Képek stílusa az oldalsávban */
 .sidebar-images {
     display: flex;
-    flex-direction: column; /* Képek egymás alatt */
-    align-items: center;    /* Középre igazítás */
-    gap: 105px;              /* Képek közötti távolság */
+    flex-direction: column; 
+    align-items: center;    
+    gap: 105px;              
 }
 .sidebar-images img {
     width: 200px;
     height: auto;
-    object-fit: cover;
-    
-    
+    object-fit: cover;   
 }
 
 .sidebar-images img:first-child {
-    margin-top: 80px; /* Növeld ezt az értéket a kívánt távolság alapján */
+    margin-top: 80px; 
 }
 
-
-/* Fő tartalom stílus */
 .main-content {
-    flex-grow: 1; /* A fő tartalom kitölti a maradék helyet */
-    max-width: 800px; /* Maximális szélesség a fő tartalomhoz */
+    flex-grow: 1; 
+    max-width: 800px; 
     padding: 20px;
-    background-color: #efefe9; /* Fő tartalom háttérszíne */
+    background-color: #efefe9; 
 
-    margin-left: 20px; /* Különbség az oldalsáv és a fő tartalom között */
-    
+    margin-left: 20px;    
 }
 
-/* Projektek galéria */
 .projects-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -130,15 +108,10 @@ img {
     margin-top: 10px;
     font-size: 30px;
     color: #223030;
-   
-
 }
 
-
-
-/* Szekciók stílusai */
 section {
-    margin-bottom: 20px; /* Szekciók közötti távolság */
+    margin-bottom: 20px; 
 }
 
 #random-user {
@@ -158,13 +131,12 @@ section {
 }
 
 #user-info img {
-    border: 5px solid #223030; /* Zöld színű keret */
-    object-fit: cover; /* A kép megfelelően illeszkedjen a keretbe */
+    border: 5px solid #223030; 
+    object-fit: cover; 
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
 }
 
-}
 
